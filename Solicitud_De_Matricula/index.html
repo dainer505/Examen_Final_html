@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de matricula</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section id="matricula">
+            <div class="logo-contenedor">
+                <img class="logo" src="img/logo99.jpg" alt="Logo de la autoescuela">
+            </div>
+            <h1>Solicitud de Matrícula</h1>
+            <p>Completa para inscribirte a nuestro curso de conducción</p>
+
+            <form action="#" method="post">
+                <div class="grupo-campo">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required>
+                </div>
+                
+                <div class="grupo-campo">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="telefono">Número de teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Escribe tu número de teléfono" required minlength="10" maxlength="10" pattern="[0-9]{10}">
+                </div>
+        
+                <div class="grupo-campo">
+                    <label for="curso">Curso de conducción</label>
+                    <select id="curso" name="curso" required>
+                        <option value="">Selecciona una opcion</option>
+                        <option value="carro">curso de carro </option>
+                        <option value="moto">Curso de moto</option>
+                        <option value="mixto">curso de carro y moto</option>
+                    </select>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="mensaje">mensaje o comentario</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje o comentario" required></textarea>
+                </div>
+
+                <button type="submit">Enviar solicitud</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
